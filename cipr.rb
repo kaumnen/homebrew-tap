@@ -5,11 +5,11 @@
 class Cipr < Formula
   desc ""
   homepage "https://github.com/kaumnen/homebrew-kaumnen"
-  version "0.6.0"
+  version "0.7.0"
 
   on_macos do
-    url "https://github.com/kaumnen/cipr/releases/download/v0.6.0/cipr_0.6.0_darwin_all.tar.gz"
-    sha256 "f4cfda804bbac2864aa71afcb87cd31a0cabf5552c978e86cd92e60a61430534"
+    url "https://github.com/kaumnen/cipr/releases/download/v0.7.0/cipr_0.7.0_darwin_all.tar.gz"
+    sha256 "f72d33e498709906658d06e362732f5460b90f1f029e35567ff606bcff103be0"
 
     def install
       bin.install "cipr"
@@ -19,8 +19,8 @@ class Cipr < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/kaumnen/cipr/releases/download/v0.6.0/cipr_0.6.0_linux_amd64.tar.gz"
-        sha256 "fbef59ad34188f4b49abd30dc6455725c3fc71951c8536c46b3c608fab24f58d"
+        url "https://github.com/kaumnen/cipr/releases/download/v0.7.0/cipr_0.7.0_linux_amd64.tar.gz"
+        sha256 "d371fc7d9ebcfec00d9b37eb8dab611b5778f74ce54ea717722c1eacd9cca97b"
 
         def install
           bin.install "cipr"
@@ -29,8 +29,8 @@ class Cipr < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/kaumnen/cipr/releases/download/v0.6.0/cipr_0.6.0_linux_arm64.tar.gz"
-        sha256 "492f7c2e28b6c4a22472f6c40a4473a367f3241483ca0677fbbb7a4e60501797"
+        url "https://github.com/kaumnen/cipr/releases/download/v0.7.0/cipr_0.7.0_linux_arm64.tar.gz"
+        sha256 "e8b17b119886972b07ec7403f6b6ff6986ad42735da44567bc365be0715c591c"
 
         def install
           bin.install "cipr"

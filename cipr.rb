@@ -5,20 +5,20 @@
 class Cipr < Formula
   desc ""
   homepage "https://github.com/kaumnen/cipr"
-  version "0.10.0"
+  version "0.11.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kaumnen/cipr/releases/download/v0.10.0/cipr_darwin_amd64.tar.gz"
-      sha256 "9ba47fcaa6ac9c1956b23a70ed87a1f5c1d99d7afa3403dbc54674ad48d96a01"
+      url "https://github.com/kaumnen/cipr/releases/download/v0.11.0/cipr_darwin_amd64.tar.gz"
+      sha256 "8f468e88e193687cd607fbf5b179d77db490e654936fa6501f029f843b659106"
 
       define_method(:install) do
         bin.install "cipr"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kaumnen/cipr/releases/download/v0.10.0/cipr_darwin_arm64.tar.gz"
-      sha256 "0b5ef885ffb6f45182683c366598ab79cfa6836e206096059e4bac19f4a6df4f"
+      url "https://github.com/kaumnen/cipr/releases/download/v0.11.0/cipr_darwin_arm64.tar.gz"
+      sha256 "42c6d96a9d572b3a9bfdfb649ece21db1cec6068583637b20de8fb4a177af492"
 
       define_method(:install) do
         bin.install "cipr"
@@ -28,15 +28,15 @@ class Cipr < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kaumnen/cipr/releases/download/v0.10.0/cipr_linux_amd64.tar.gz"
-      sha256 "dcd0790fe28f73cad03a05b2a4405a15ea7b5c4369f7952d0bb8e9a2ab29378c"
+      url "https://github.com/kaumnen/cipr/releases/download/v0.11.0/cipr_linux_amd64.tar.gz"
+      sha256 "c7487d18cdc51c255286090ebb856becbe8d3f00c0e9264f8e2c0299a53d057c"
       define_method(:install) do
         bin.install "cipr"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kaumnen/cipr/releases/download/v0.10.0/cipr_linux_arm64.tar.gz"
-      sha256 "dfc78e813672f02f06fe1e03c17e27f1a0b8076d5a9958b7a67a2a13eca0b340"
+      url "https://github.com/kaumnen/cipr/releases/download/v0.11.0/cipr_linux_arm64.tar.gz"
+      sha256 "32da80ff7f2948e4d43f5430db52435a87d37b45e127e2de61298bd3e3e6907b"
       define_method(:install) do
         bin.install "cipr"
       end

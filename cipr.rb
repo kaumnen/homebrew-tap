@@ -5,21 +5,21 @@
 class Cipr < Formula
   desc "Retrieve IP ranges from cloud providers and services"
   homepage "https://github.com/kaumnen/cipr"
-  version "0.19.0"
+  version "0.20.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kaumnen/cipr/releases/download/v0.19.0/cipr_darwin_amd64.tar.gz"
-      sha256 "9b0fba60f5a7497278d6fc95ae727c0bb3619fc960b89a5fa258ea08e4022d3f"
+      url "https://github.com/kaumnen/cipr/releases/download/v0.20.0/cipr_darwin_amd64.tar.gz"
+      sha256 "30db845b1792b35940d323877172b51cf54f9e5d6be4a1c6f4ca60f9c7344b3c"
 
       define_method(:install) do
         bin.install "cipr"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kaumnen/cipr/releases/download/v0.19.0/cipr_darwin_arm64.tar.gz"
-      sha256 "389e4dca6f4c58edba3ebc93bf16e7ef8d04cfe8b208d1a0b1b13919ec969f70"
+      url "https://github.com/kaumnen/cipr/releases/download/v0.20.0/cipr_darwin_arm64.tar.gz"
+      sha256 "f2b6a32478768d2173603ce3aa90d768b2f4272a433dbbf9b74d182e536fe464"
 
       define_method(:install) do
         bin.install "cipr"
@@ -29,15 +29,15 @@ class Cipr < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kaumnen/cipr/releases/download/v0.19.0/cipr_linux_amd64.tar.gz"
-      sha256 "83b0c9be428615701ac90b9c86969f729e5215807098d9dc7f878e6d43f8a25e"
+      url "https://github.com/kaumnen/cipr/releases/download/v0.20.0/cipr_linux_amd64.tar.gz"
+      sha256 "fb5961cd2ee52c284cf9d716e6699c411530e1cc9e2421bedb515e89e860006f"
       define_method(:install) do
         bin.install "cipr"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kaumnen/cipr/releases/download/v0.19.0/cipr_linux_arm64.tar.gz"
-      sha256 "afbf68483c3053c8512a53f7e4d1e3cec984515d94a37137b17b0d464e469d90"
+      url "https://github.com/kaumnen/cipr/releases/download/v0.20.0/cipr_linux_arm64.tar.gz"
+      sha256 "eea82134511e93cf8a8c8ebfcf6dd22fb5e0b97b4ec9eadafdc3af5806ed3ba7"
       define_method(:install) do
         bin.install "cipr"
       end
